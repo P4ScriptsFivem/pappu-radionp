@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    display: block;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background-color: transparent !important;
+    /* overflow: hidden; */
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+@font-face {
+    font-family: DSDigi;
+    src: url(fonts/DS-DIGI.ttf);
+}
+
+#mainDiv {
+    width: 19%;
+    height: 31%;
+    background-image: url(files/radio3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -5%;
+    right: 3%;
+    display: none;
+}
+
+#mainDivScreen {
+    width: 62%;
+    height: 21%;
+    position: absolute;
+    left: 14%;
+    right: 0;
+    bottom: 52%;
+    margin: auto;
+    border-radius: 5px;
+    /* background: red; */
+    /* background: radial-gradient(81.96% 46.92% at 50% 50%, #FAC835 0%, #FEA728 100%);
+    box-shadow: 0px 0px 6.4px 0px #DC6E20 inset, 0px 0px 6.4px 0px #DC6E20 inset, 0px 0px 6.8px 0px rgba(255, 255, 255, 0.29) inset;
+    filter: drop-shadow(0px 0px 37.8px #A63C00) drop-shadow(0px 0px 71.9px rgba(255, 116, 37, 0.44)) drop-shadow(0px 0px 32.4px #FF6F32); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: DSDigi;
+    gap: 0.3vw;
+}
+
+#mainDivScreen h4 {
+    background: radial-gradient(132.5% 132.5% at 50% 50%, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainDivOnOff {
+    width: 13.7%;
+    height: 8.3%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 22%;
+    bottom: 26.6%;
+    font-size: 0.8vw;
+}
+
+.mainDivOn {
+    background: #DD4A24;
+    box-shadow: -1px -1px 5px 0px #1B1B1B inset, 0px 3px 1.3px 0px #000;
+}
+
+.mainDivOff {
+    background: #9E9E9E;
+    box-shadow: 1px 2px 2.9px 1px #9C9C9C inset, 0px 2px 0.5px -1px #CACACA inset, -1px -1px 5px 0px #1B1B1B inset, 0px 3px 1.3px 0px #000;
+}
+
+.mainDivOnOff:hover {
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#mainDivText {
+    width: 55%;
+    height: 10%;
+    position: absolute;
+    right: 3.5%;
+    bottom: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #6a7577;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.1vw;
+    /* background-color: red; */
+}
+
+#mainDivVolumeButtons {
+    width: 28%;
+    height: 5%;
+    position: absolute;
+    right: 11%;
+    bottom: 18%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.3vw;
+    z-index: 2;
+    /* background-color: red; */
+}
+
+#mainDivVolumeButton {
+    width: 48.5%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background: #0D2C84;
+    box-shadow: 0px 0.2px 1.2px 1px #256E9E inset, 0px 0px 4.6px -0.699px #256E9E inset, -1.397px -1.4px 3.494px 0px #12182B inset, 0px 2.096px 0.908px 0px #040717;
+    color: white;
+    font-size: 0.6vw;
+}
+
+#mainDivVolumeButton:hover {
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#MDRadioFreq {
+    width: 40%;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(132.5% 132.5% at 50% 50%, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: DSDigi;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+#MDRadioFreq::-webkit-outer-spin-button,
+#MDRadioFreq::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#MDSInputDiv {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.35vw;
+}
