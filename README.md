@@ -31,3 +31,7 @@ QBCore, QBXCore, ESX Radio And inspired by NoPixel 4.0.
 - [pma-voice](https://github.com/AvarianKnight/pma-voice)
 - or
 - [saltychat-fivem](https://github.com/v10networkscom/saltychat-fivem)
+
+
+## License
+[GPL-3.0 license](LICENSE)
