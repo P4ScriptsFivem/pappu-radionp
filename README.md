@@ -25,7 +25,7 @@ QBCore, QBXCore, ESX Radio And inspired by NoPixel 4.0.
 - [qb-core](https://github.com/qbcore-framework/qb-core)
 - [qbox](https://github.com/Qbox-project/qbx_core)
 - [esx](https://github.com/esx-framework/esx_core)
-- [Custom Core](https://github.com/P4ScriptsFivem/pappu-radionp/blob/main/shared/cores.lua)
+- [Custom Core](https://github.com/P4ScriptsFivem/pappu-radionp/blob/main/shared/pappu.lua)
 
 # Dependencies
 - [pma-voice](https://github.com/AvarianKnight/pma-voice)
